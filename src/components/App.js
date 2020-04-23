@@ -11,10 +11,10 @@ export default class App extends Component {
     bad: 0,
   };
 
-  handleChange = e => {
-    const { name } = e.target;
+  handleChange = option => {
+    // const { name } = e.target;
     this.setState(state => ({
-      [name]: state[name] + 1,
+      [option]: state[option] + 1,
     }));
     this.countTotalFeedback();
     this.countPositiveFeedbackPercentage();
